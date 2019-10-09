@@ -1,3 +1,5 @@
+require_relative "pry"
+
 def second_challenge
   groceries = {
    dairy: ["milk", "yogurt", "cheese"],
@@ -9,8 +11,9 @@ def second_challenge
   #code your solution here!
   groceries_array = []
   groceries.each do |grocery, item|
-    groceries_array.join(grocery.values
+    groceries_array.concat(grocery.values)
+    binding.pry
   end
   
-
+  groceries_array
 end

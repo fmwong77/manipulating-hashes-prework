@@ -14,11 +14,13 @@ def first_challenge
   }
 
   #your code here
-  contacts.each do |person, data|
+  contacts.collect do |person, data|
     person.next if data != "Freddy Mercury"
     data.each do |attribute, d|
       attribute.next if d != "favorite_icecream_flavors"
-      d.delete_if()
+      d.each do |ice_cream, flavour|
+        flavour.delete_if {
+      end
     end
   end
 

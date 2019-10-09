@@ -10,13 +10,4 @@ def second_challenge
 
   #code your solution here!
   groceries.values.flatten
-  # groceries_array = []
-  
-  # groceries.values
-  # groceries.each do |grocery, item|
-  #   groceries_array.concat(grocery.values)
-  #   binding.pry
-  # end
-  
-  # groceries_array
 end

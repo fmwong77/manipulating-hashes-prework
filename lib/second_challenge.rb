@@ -7,7 +7,10 @@ def second_challenge
   }
 
   #code your solution here!
-  
+  groceries_array = []
+  groceries.each do |grocery, item|
+    groceries_array.join(grocery.values
+  end
   
 
 end

@@ -16,11 +16,10 @@ def first_challenge
   #your code here
   contacts.collect do |person, data|
     person.next if data != "Freddy Mercury"
-    data.each do |attribute|
-      # attribute.next if attribute != "favorite_icecream_flavors"
-      # d.each do |ice_cream, flavour|
-      #   flavour.delete_if {
-      # end
+    data.each do |key, value|
+      if value.kind_of?(Array)
+        value.delete_if {|flavour| flavour == "strawberry"}
+      end
     end
   end
 

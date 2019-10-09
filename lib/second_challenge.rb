@@ -1,4 +1,4 @@
-require_relative "pry"
+require "pry"
 
 def second_challenge
   groceries = {
